@@ -1,149 +1,160 @@
-body{
+body {
     background-color: hsl(257, 40%, 49%);
     background-image: url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
 }
 
-.main{
+.header {
     display: flex;
+    padding: 60px 80px;
 }
 
-.logo{
-    margin: 60px 0 60px 80px;
+.logo {
+    width: 220px;
 }
 
-.imagem-principal{
-    margin: 60px 0 0 80px;
-    min-width: 850px;
+.main {
+    display: flex;
+    padding: 0 80px;
 }
 
-.texto-principal{
-    margin: 60px 80px 0 60px;
+.imagem-principal {
+    min-width: 700px;
 }
 
-.texto-principal h1{
+.texto-principal {
+    padding: 60px 0 60px 60px;
+}
+
+.texto-principal h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    font-size: 48px;
+    font-size: 40px;
     color: #fff;
-    margin: 30px 0 30px 0;
 }
 
-.texto-principal p{
+.texto-principal p {
     font-family: 'Open sans', sans-serif;
-    font-size: 21.5px;
-    line-height: 180%;
+    font-size: 18px;
+    line-height: 160%;
     color: #fff;
-    margin-bottom: 50px;
+    margin: 20px 0 38px 0;
 }
 
-.texto-principal .button{
+.texto-principal .button {
     font-family: 'Poppins', sans-serif;
-    font-size: 22px;
+    font-size: 18px;
     text-decoration: none;
     text-align: center;
     color: hsl(257, 40%, 49%);
     background-color: #fff;
-    padding: 20px 80px;
+    padding: 15px 60px;
     border-radius: 50px;
     box-shadow: 5px 5px 30px rgba(1, 1, 1, 0.3);
     transition: 0.3s;
 }
 
-.texto-principal .button:hover{
+.texto-principal .button:hover {
     background-color: hsl(300, 69%, 71%);
     color: #fff;
 }
 
-.social{
-    display: flex;
-    justify-content: flex-end;
-    margin: 0 80px 60px 60px;
+.footer {
+    padding: 30px 80px;
 }
 
-.social .social-icon{
+.social {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social .social-icon {
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 18px;
     color: #fff;
-    border: 2px solid #fff;
+    border: 1.5px solid #fff;
     border-radius: 50%;
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     margin-left: 20px;
     transition: 0.3s;
 }
 
-.social .social-icon:hover{
+.social .social-icon:hover {
     color: hsl(300, 69%, 71%);
     border: 2px solid hsl(300, 69%, 71%);
 }
 
-@media (max-width: 376px){
-    body{
+@media (max-width: 376px) {
+    body {
         background-image: url(images/bg-mobile.svg);
-        background-repeat: no-repeat;
     }
 
-    .main{
-        flex-direction: column;
+    .header {
+        padding: 30px 35px;
     }
 
-    .logo{
-        margin: 30px;
+    .logo {
         width: 130px;
     }
 
-    .imagem-principal{
-        margin: 35px;
-        min-width: 0;
+    .main {
+        flex-direction: column;
+        padding: 30px 35px;
     }
 
-    .texto-principal{
+    .imagem-principal {
+        min-width: 0;
+        margin-bottom: 60px;
+    }
+
+    .texto-principal {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 0 35px;
+        padding: 0;
     }
 
-    .texto-principal h1{
+    .texto-principal h1 {
         font-size: 23px;
         text-align: center;
-        margin: 15px 20px;
     }
-    
-    .texto-principal p{
+
+    .texto-principal p {
         font-size: 16px;
         text-align: center;
-        line-height: 150%;
-        margin-bottom: 30px;
+        margin: 15px 0;
     }
 
     /* usei align-self abaixo porque justify-content no container pai 
     não alinhou e não sei por que, se puder me tirar essa dúvida, agradeço! */
-    
-    .texto-principal .button{
+
+    .texto-principal .button {
         font-size: 12px;
         padding: 10px;
         width: 180px;
         align-self: center;
     }
 
-    .social{
-        justify-content: center;
-        margin: 50px;
+    .footer {
+        padding: 35px 40px;
     }
 
-    .social .social-icon{
-        font-size: 14px;
-        border: 1px solid #fff;
+    .social {
+        justify-content: center;
+    }
+
+    .social .social-icon {
+        font-size: 12px;
         width: 25px;
         height: 25px;
         margin-left: 10px;
     }
 
-    .social .social-icon:first-child{
+    .social .social-icon:first-child {
         margin-left: 0;
     }
 }
